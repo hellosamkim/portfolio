@@ -1,10 +1,10 @@
 (function() {
   $(function() {
-    // $('#site-wrapper').hide();
-    // setTimeout("$('#site-wrapper').fadeIn(3000)", 5100);
+    $('#site-wrapper').hide();
+    setTimeout("$('#site-wrapper').fadeIn(3000)", 5100);
     $('#first-phrase').typed({
       strings: ['Hi There!', 'You can call me Sam.', 'Sam Kim'],
-      typeSpeed: 5,
+      typeSpeed: 4,
       backDelay: 1000
     });
     $('#second-phrase').typed({
@@ -28,14 +28,5 @@
       backDelay: 3500
     }, 
     $('#abouts').addClass('animated infinite pulse'), $('#contact').addClass('animated infinite pulse'), $('#portfolio').addClass('animated infinite pulse'), $('#resume').addClass('animated infinite pulse'));  
-    $.ajax({
-      type: 'GET',
-      url: "/pages/abouts",
-      cache: false,
-      data: {},
-      success: function(data){
-        $('#info').html(data)
-      }
-    });
   });
 }).call(this);
