@@ -1,0 +1,163 @@
+@charset "utf-8";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+body {
+  background-color: #222;  
+}
+
+#blinking-dot {
+  position: absolute;
+  left: 60.3058%;
+  padding-top: 6px;
+  right: 0;
+  margin-top: 45.5px;
+  height:2px;
+  width:2px;
+  border-radius: 100px;
+  background-color: rgba(255, 38, 38, 0.8);
+}
+
+.intro {
+  #first-phrase, #second-phrase, #third-phrase {
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 3%;
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 250, 164, 0.9);
+  }
+
+  #second-phrase {
+    font-size: 2.5rem;
+    color: rgba(255, 205, 164, 0.75);
+    margin-top: 140px;
+  }
+
+  #third-phrase {
+    font-size: 1.5rem;
+    color: rgba(215, 255, 164, 0.75);
+    margin-top: 185px;
+  }
+}
+
+.site-wrapper {
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: linear-gradient(rgba(34, 42, 34, 0.4), rgba(34, 42, 34, 0.4)), url("/images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.02;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/background-cover.png');
+    z-index: 1;
+  }
+}
+
+.social-links {
+  z-index: 10;
+  position: absolute;
+  font-size: 25px;
+  left: 0;
+  margin-left: 3%;
+  margin-top: 220px;
+
+  a {
+    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #888;
+    text-decoration: none;
+  }
+
+  a:hover, a:active, a:visited {
+    text-decoration: none;
+  }
+
+  #twitter:hover {
+    color: #55ACEE; 
+  }
+  
+  #github:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #888;
+    color: #222;
+  }
+  
+  #linkedin:hover {
+    color: #0077B5
+  }
+}
+
+.site-links {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 3%;
+  margin-bottom: 40px;
+  font-size: 40px;
+
+  a {
+    color: rgba(164,215,255, 0.5);
+    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: rgba(164,215,255, 0.9);
+    text-decoration: none;
+  }
+}
+
+.facts-about-me {
+  width: 45%;
+  text-align: right;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  margin-right: 3%;
+
+  #my-statements {
+    color: rgba(255, 250, 164, 0.5);
+  }
+}
+
+.footer {
+  color: rgba(246, 246, 246, 0.3);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 7px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.typed-cursor { 
+    display: none;
+}
+
+.my-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 3%;
+}

@@ -1,0 +1,33 @@
+.intro
+  %span#first-phrase
+  %span#second-phrase
+  %span#third-phrase
+
+.site-wrapper#site-wrapper
+  .bg
+  #dots
+  .site-details#site-details
+    .social-links
+      %a{:href => "http://www.twitter.com/hellosamkim", id: "twitter", target: "_blank"}
+        %i{:class => "fa fa-twitter"}
+      %a{:href => "https://github.com/hellosamkim", id: "github", target: "_blank"}
+        %i{:class => "fa fa-github"}
+      %a{:href => "https://www.linkedin.com/in/hellosamkim", id: "linkedin", target: "_blank"}
+        %i{:class => "fa fa-linkedin"}
+    .site-links
+      = link_to '/abouts.html.haml', id: "abouts", remote: true do
+        %i{:class => "fa fa-info"}
+      = link_to 'contact.html.haml', id: "contact", remote: true do
+        %i{:class => "fa fa-comment"}
+      = link_to 'portfolio.html.haml', id: "portfolio", remote: true do
+        %i{:class => "fa fa-archive"}
+      / = link_to contacts_path, id: "contact", remote: true do
+      /   %i{:class => "fa fa-file-text-o"}
+    #info
+    .facts-about-me
+      %span{:style => "color: rgba(246, 246, 246, 0.5)"}
+        Did you know...
+      %span#my-statements
+    .footer
+      Template designed by Sam Kim 
+    
