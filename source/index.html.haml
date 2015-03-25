@@ -15,15 +15,13 @@
       %a{:href => "https://www.linkedin.com/in/hellosamkim", id: "linkedin", target: "_blank"}
         %i{:class => "fa fa-linkedin"}
     .site-links
-      = link_to '/abouts.html', id: "abouts", remote: true do
+      = link_to 'abouts', id: "abouts", remote: true do
         %i{:class => "fa fa-info"}
-      = link_to 'contact.html.haml', id: "contact", remote: true do
+      = link_to '#', id: "contact", remote: true do
         %i{:class => "fa fa-comment"}
-      = link_to 'portfolio.html.haml', id: "portfolio", remote: true do
+      = link_to '#', id: "portfolio", remote: true do
         %i{:class => "fa fa-archive"}
-      / = link_to contacts_path, id: "contact", remote: true do
-      /   %i{:class => "fa fa-file-text-o"}
-    #info
+    #my-info
     .facts-about-me
       %span{:style => "color: rgba(246, 246, 246, 0.5)"}
         Did you know...

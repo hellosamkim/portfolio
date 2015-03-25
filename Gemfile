@@ -2,8 +2,6 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-ruby "2.2.1"
-
 gem "middleman", "~>3.3.10"
 
 # Live-reloading plugin

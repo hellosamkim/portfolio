@@ -125,7 +125,7 @@ body {
   position:absolute;
   bottom: 0;
   right: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 40px;
   margin-right: 3%;
 
@@ -146,9 +146,15 @@ body {
   text-align: center;
 }
 
-.my-info {
+#my-info {
   position: absolute;
   right: 0;
   top: 0;
+  width: 60%;
+  height: 85%;
   margin-right: 3%;
+}
+
+#abouts {
+  z-index: 500;
 }
