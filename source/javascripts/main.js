@@ -21,22 +21,46 @@ $(document).ready(function(){
   // $('#site-details').hide();
   // setTimeout("$('#site-details').fadeIn(1000)", 9000);
   $('#my-statements').typed({
-    strings: ['I can play 5 Instruments?', 'I used to be a DJ?', 'I have a dog named Coco?', 'I can Beatbox?', 'I can speak fluent Korean?', "The first programming language I learnt was Pascal?", "A can of Diet Coke floats in water, but Regular Coca-Cola sinks? Try it!"],
+    strings: ['I can play 5 Instruments?', 'I used to be a DJ?', 'I have a dog named Coco?', 'I can Beatbox?', 'I can speak fluent Korean?', "The first programming language I ever learnt was Pascal?", "A can of Diet Coke floats in water, but Regular Coca-Cola sinks? Try it!"],
     typeSpeed: 20,
     startDelay: 12000,
     backDelay: 5500
   }); 
-  loadPage('abouts')
-  loadPage('contact')
-  loadPage('portfolio')
-  $('#made').hide()
+  loadPage('abouts');
+  loadPage('contact');
+  loadPage('portfolio');
+  loadPagePreview('abouts');
+  loadPagePreview('contact');
+  loadPagePreview('portfolio');
+  $('#abouts').addClass('animated infinite pulse');
+  $('#contact').addClass('animated infinite pulse');
+  $('#portfolio').addClass('animated infinite pulse');
 
   function loadPage(page){
     $('#' + page).click(function(e){
       e.preventDefault();
+      $('#selection-overlay').fadeOut('fast');
       $('#my-info').load(page + ' #' + page, function(){
         $(this).hide().fadeIn('slow');
       });
     });
+  };
+
+  function loadPagePreview(page){
+    var phrase = "";
+    if (page === "abouts") {
+      phrase = "About Me"
+    } else if (page === "contact") {
+      phrase = "Contact Me"
+    } else {
+      phrase = "My Portfolio"
+    }
+    $('#' + page).hover(
+      function(){
+        $('#selection-overlay').text(phrase).fadeIn('fast');
+      }, function() {
+        $('#selection-overlay').fadeOut('fast');
+      }
+    );
   };
 });
