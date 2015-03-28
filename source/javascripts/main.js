@@ -27,10 +27,8 @@ $(document).ready(function(){
     backDelay: 5500
   }); 
   loadPage('abouts');
-  loadPage('contact');
   loadPage('portfolio');
   loadPagePreview('abouts');
-  loadPagePreview('contact');
   loadPagePreview('portfolio');
   $('#abouts').addClass('animated infinite pulse');
   $('#contact').addClass('animated infinite pulse');

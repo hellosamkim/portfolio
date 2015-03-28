@@ -110,6 +110,9 @@ body {
   #linkedin:hover {
     color: #0077B5
   }
+  #mail:hover {
+    color: rgba(255, 205, 164, 0.9)
+  }
 }
 
 .site-links {
@@ -196,14 +199,14 @@ body {
       margin-top: -10px;
       text-decoration: none;
     }
-    #bitmaker {
+    #bitmaker, #mail {
       color: rgba(164, 215, 255, 0.7);
       text-decoration: none;
       -moz-transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
     }
-    #bitmaker:hover {
+    #bitmaker:hover, #mail:hover {
       color: rgba(164, 215, 255, 1);
     }
   }
@@ -216,7 +219,7 @@ body {
     vertical-align: center;
   }
   .fe, .be {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: inline-block;
     background-color: rgba(255, 205, 164, 0.6);
     padding: 4px;
