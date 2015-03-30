@@ -1,13 +1,10 @@
 !!!
 %html
-%head
-  %title Portfolio
-  = stylesheet_link_tag "all"
-  = stylesheet_link_tag "animate"
-  = stylesheet_link_tag "normalize"
-  = stylesheet_link_tag "typed"
-  = stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Oswald:400,700'
-  = javascript_include_tag "all"
-  = csrf_meta_tags
-
-= yield
+  %head
+    %title Sam Kim
+    = stylesheet_link_tag "all"
+    = stylesheet_link_tag "animate"
+    = stylesheet_link_tag "normalize"
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Oswald:400,700'
+    = csrf_meta_tags
+  = yield

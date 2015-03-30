@@ -6,6 +6,10 @@ body {
   background-color: #222;  
 }
 
+a, a:hover, a:active, a:focus {
+  outline: 0 !important;
+}
+
 .typed-cursor { 
     display: none;
 }
@@ -39,7 +43,7 @@ body {
   font-family: 'Oswald', sans-serif;
   left: 0;
   right: 0;
-  bottom: 8%;
+  bottom: 3%;
   width: 100px;
   text-align: center;
   margin-left: auto;
@@ -194,81 +198,93 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: 70px;
-  width: 60%;
+  margin-top: 98px;
+  width: 56%;
   height: 60%;
   z-index: 2;
   margin-right: 3%;
-  padding-top: 8px;
+
+  #abouts {
+    z-index: 2;
+    .about-me, .skillset {
+      color: rgba(249, 249, 249, 0.7);
+      font-size: 1.1rem;
+      h1, h2, h5 {
+        margin-top: 0px;
+        margin-bottom: 12px;
+        color: rgba(215, 255, 164, 0.7);
+        text-decoration: underline;
+      }
+      h2 {
+        margin-top: 13px; 
+      }
+      h5 {
+        margin-top: -10px;
+        text-decoration: none;
+      }
+      #bitmaker, #mail {
+        color: rgba(164, 215, 255, 0.7);
+        text-decoration: none;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+      #bitmaker:hover, #mail:hover {
+        color: rgba(164, 215, 255, 1);
+      }
+      span.i1 {
+        color: rgba(255, 205, 164, 1);
+      }
+      span.i2 {
+        color: rgba(255, 250, 164, 1);
+      }
+    }
+    .skillset {
+      i {
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        vertical-align: center;
+      }
+      .fe, .be {
+        font-size: 1.1rem;
+        display: inline-block;
+        background-color: rgba(255, 205, 164, 0.6);
+        padding: 4px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        color: #FEFEFE;
+      }
+      .fe:hover {
+        background-color: rgba(255, 250, 164, 0.6);
+      }
+
+      .be {
+        background-color: rgba(255, 250, 164, 0.6);
+        margin-bottom: 7px;
+      }
+      .be:hover {
+        background-color: rgba(255, 205, 164, 0.6)
+      }
+    }
+  }
+
+  #portfolio {
+    .row {
+      .project-l, .project-r {
+        display: inline-block;
+        width: 50%;
+      }
+      .project-l {
+        float: left;
+      }
+      .project-r {
+        float: right;
+      }
+    }
+  }
 }
 
 // Other pages
-
-#abouts {
-  z-index: 2;
-  .about-me, .skillset {
-    color: rgba(249, 249, 249, 0.7);
-    font-size: 1.1rem;
-    margin-left: 6.5%;
-    h1, h2, h5 {
-      margin-bottom: 12px;
-      color: rgba(215, 255, 164, 0.7);
-      text-decoration: underline;
-    }
-    h2 {
-      margin-top: 13px; 
-    }
-    h5 {
-      margin-top: -10px;
-      text-decoration: none;
-    }
-    #bitmaker, #mail {
-      color: rgba(164, 215, 255, 0.7);
-      text-decoration: none;
-      -moz-transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-    }
-    #bitmaker:hover, #mail:hover {
-      color: rgba(164, 215, 255, 1);
-    }
-    span.i1 {
-      color: rgba(255, 205, 164, 1);
-    }
-    span.i2 {
-      color: rgba(255, 250, 164, 1);
-    }
-  }
-}
-
-.skillset {
-  i {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
-    vertical-align: center;
-  }
-  .fe, .be {
-    font-size: 1.1rem;
-    display: inline-block;
-    background-color: rgba(255, 205, 164, 0.6);
-    padding: 4px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    color: #FEFEFE;
-  }
-  .fe:hover {
-    background-color: rgba(255, 250, 164, 0.6);
-  }
-
-  .be {
-    background-color: rgba(255, 250, 164, 0.6);
-    margin-bottom: 7px;
-  }
-  .be:hover {
-    background-color: rgba(255, 205, 164, 0.6)
-  }
-}
-
 
