@@ -4,10 +4,11 @@ $(document).ready(function(){
     $('.intro-skip').hide();
     $('#skip-button').hide();
     introSkip();  
+    $('#my-info').load('abouts');
 
     function intro(){
       $('#site-wrapper').hide();
-      setTimeout("$('#site-wrapper').fadeIn(3000)", 5100);
+      setTimeout("$('#site-wrapper').fadeIn(1500)", 5100);
       $('#first-phrase').typed({
         strings: ['Hi There!', 'You can call me Sam.', 'Sam Kim'],
         typeSpeed: 4,
@@ -45,7 +46,7 @@ $(document).ready(function(){
         $('.intro').fadeOut('fast');
         $('#skip-button').addClass('animated bounceOutDown');
         $('.intro-skip').fadeIn(1500);
-        $('#site-wrapper').fadeIn(1500);
+        $('#site-wrapper').fadeIn('1500');
         $('#site-details').fadeIn(1500);
         startMyStatements(2000);
       });
@@ -54,7 +55,7 @@ $(document).ready(function(){
 
     function startMyStatements(startDelay){
       $('#my-statements').typed({
-        strings: ['I can play 5 Instruments?', 'I used to be a DJ?', 'I have a dog named Coco?', 'I can Beatbox?', 'I can speak fluent Korean?', "The first programming language I ever learnt was Pascal?", "A can of Diet Coke floats in water, but Regular Coca-Cola sinks? Try it!"],
+        strings: ['I can play 5 Instruments?', 'I used to be a DJ?', 'I have a dog named Coco?', 'I can Beatbox?', 'I can speak fluent Korean?', "The first programming language I ever learnt was Pascal?", "A can of Diet Coke floats in water, but regular Coca-Cola sinks? Try it!"],
         typeSpeed: 20,
         startDelay: startDelay,
         backDelay: 5500

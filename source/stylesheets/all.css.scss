@@ -4,6 +4,7 @@
 
 body {
   background-color: #222;  
+  overflow: hidden;
 }
 
 a, a:hover, a:active, a:focus {
@@ -250,7 +251,7 @@ a, a:hover, a:active, a:focus {
         display: inline-block;
         background-color: rgba(255, 205, 164, 0.6);
         padding: 4px;
-        border-radius: 8px;
+        border-radius: 4px;
         transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
@@ -271,10 +272,28 @@ a, a:hover, a:active, a:focus {
   }
 
   #portfolio {
+    background-color: rgba(1, 1, 1, 0.4);
+    overflow: auto;
+    padding: 15px;
+    border-radius: 5px;
     .row {
       .project-l, .project-r {
         display: inline-block;
         width: 50%;
+        img {
+          -webkit-filter: grayscale(100%) blur(1px);
+          -moz-filter: grayscale(100%) blur(1px);
+          filter: grayscale(100%) blur(1px);
+          cursor: pointer;
+          -moz-transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+        img:hover {
+          -webkit-filter: grayscale(0%) blur(0px);
+          -moz-filter: grayscale(0%) blur(0px);
+          filter: grayscale(0%) blur(0px);
+        }
       }
       .project-l {
         float: left;
@@ -288,3 +307,19 @@ a, a:hover, a:active, a:focus {
 
 // Other pages
 
+.proj-1 {
+  background-color: rgba(248, 248, 248, 0.4);
+  border-radius: 3px;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  margin-left: auto;
+  left: 0;
+  margin-right: auto;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
