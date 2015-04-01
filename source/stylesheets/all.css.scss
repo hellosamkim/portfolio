@@ -249,7 +249,7 @@ a, a:hover, a:active, a:focus {
       .fe, .be {
         font-size: 1.1rem;
         display: inline-block;
-        background-color: rgba(255, 205, 164, 0.6);
+        background-color: rgba(255, 205, 164, 0.2);
         padding: 4px;
         border-radius: 4px;
         transition: all 0.3s ease-in-out;
@@ -258,15 +258,15 @@ a, a:hover, a:active, a:focus {
         color: #FEFEFE;
       }
       .fe:hover {
-        background-color: rgba(255, 250, 164, 0.6);
+        background-color: rgba(255, 250, 164, 0.4);
       }
 
       .be {
-        background-color: rgba(255, 250, 164, 0.6);
+        background-color: rgba(255, 250, 164, 0.2);
         margin-bottom: 7px;
       }
       .be:hover {
-        background-color: rgba(255, 205, 164, 0.6)
+        background-color: rgba(255, 205, 164, 0.4)
       }
     }
   }
@@ -281,18 +281,18 @@ a, a:hover, a:active, a:focus {
         display: inline-block;
         width: 50%;
         img {
-          -webkit-filter: grayscale(100%) blur(1px);
-          -moz-filter: grayscale(100%) blur(1px);
-          filter: grayscale(100%) blur(1px);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          filter: grayscale(100%);
           cursor: pointer;
-          -moz-transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
         img:hover {
-          -webkit-filter: grayscale(0%) blur(0px);
-          -moz-filter: grayscale(0%) blur(0px);
-          filter: grayscale(0%) blur(0px);
+          -webkit-filter: grayscale(0%);
+          -moz-filter: grayscale(0%);
+          filter: grayscale(0%);
         }
       }
       .project-l {
@@ -305,11 +305,10 @@ a, a:hover, a:active, a:focus {
   }
 }
 
-// Other pages
-
-.proj-1 {
-  background-color: rgba(248, 248, 248, 0.4);
+.proj-1, .proj-2, .proj-3, .proj-4 {
+  visibility: hidden;
   border-radius: 3px;
+  color: rgba(245, 245, 245, 0.9);
   height: 80%;
   width: 80%;
   position: absolute;
@@ -321,5 +320,83 @@ a, a:hover, a:active, a:focus {
   margin-bottom: auto;
   top: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 4;
+
+  .close {
+    right: 0;
+    position: absolute;
+    margin: 15px;
+    color: rgba(245, 245, 245, 0.5);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .close:hover {
+    cursor: pointer;
+    color: rgba(245, 245, 245, 0.9);
+  }
+  .proj-pic {
+    height: 100%;
+    width: 50%;
+    float: left;
+    img {
+      height: 50%;
+      width: 100%;
+    }
+  }
+  .proj-description {
+    float: right;
+    height: 100%;
+    width: 50%;
+    
+    .proj-details {
+      width: 100%;
+      height: 50%;
+    }
+    .proj-pic {
+      height: 50%;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 5px 0 0 35px;
+      text-decoration: underline;
+    }
+    .info {
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+    }
+    .visit-site {
+      margin-left: 5%;
+      background-color: rgba(254, 156, 145, 0.8) !important;
+    }
+    .visit-site, .visit-github {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      width: 90%;
+      display: inline;
+      background-color: rgba(215, 255, 164, 0.8);
+      margin-right: 1%;
+      padding: 5px;
+      border-radius: 5px;
+      opacity: 0.7;
+      a {
+        color: #FEFEFE;
+        text-decoration: none;
+        transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+    }
+    .visit-site:hover, .visit-github:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.animated {
+  visibility: visible !important;
 }

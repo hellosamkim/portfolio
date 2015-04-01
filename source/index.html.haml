@@ -1,44 +1,112 @@
-= javascript_include_tag "all"
 %body.main
-  .intro
-    #first-phrase
-    #second-phrase
-    #third-phrase
-  .intro-skip
-    #first-phrase-s
-      Sam Kim
-    #second-phrase-s
-      Full Stack Web Developer
-    #third-phrase-s
-      Based in Toronto, ON
-  #skip-button
-    Skip
+  #main-wrap
+    .intro
+      #first-phrase
+      #second-phrase
+      #third-phrase
+    .intro-skip
+      #first-phrase-s
+        Sam Kim
+      #second-phrase-s
+        Full Stack Web Developer
+      #third-phrase-s
+        Based in Toronto, ON
+    #skip-button
+      Skip
 
-  .site-wrapper#site-wrapper
-    #bg
-    #selection-overlay
-    #dots
-    .site-details#site-details
-      .social-links
-        %a{:href => "http://www.twitter.com/hellosamkim", id: "twitter", target: "_blank"}
-          %i{:class => "fa fa-twitter"}
-        %a{:href => "https://github.com/hellosamkim", id: "github", target: "_blank"}
-          %i{:class => "fa fa-github"}
-        %a{:href => "mailto:itsmrkim@icloud.com?subject=Hey Sam, just checked out your portfolio.", id: "mail"}
-          %i{:class => "fa fa-envelope-o"}
-        %a{:href => "https://www.linkedin.com/in/hellosamkim", id: "linkedin", target: "_blank"}
-          %i{:class => "fa fa-linkedin"}
-      .site-links
-        = link_to 'abouts', id: "abouts", remote: true do
-          %i{:class => "fa fa-info"}
-        = link_to '#', id: "portfolio", remote: true do
-          %i{:class => "fa fa-folder-open"}
-      #my-info
-      .facts-about-me
-        %span{:style => "color: rgba(246, 246, 246, 0.5)"}
-          Did you know...
-        %span#my-statements
-      .footer
-        Template designed by Sam Kim 
+    .site-wrapper#site-wrapper
+      #bg
+      #selection-overlay
+      #dots
+      .site-details#site-details
+        .social-links
+          %a{:href => "http://www.twitter.com/hellosamkim", id: "twitter", target: "_blank"}
+            %i{:class => "fa fa-twitter"}
+          %a{:href => "https://github.com/hellosamkim", id: "github", target: "_blank"}
+            %i{:class => "fa fa-github"}
+          %a{:href => "mailto:itsmrkim@icloud.com?subject=Hey Sam, just checked out your portfolio.", id: "mail"}
+            %i{:class => "fa fa-envelope-o"}
+          %a{:href => "https://www.linkedin.com/in/hellosamkim", id: "linkedin", target: "_blank"}
+            %i{:class => "fa fa-linkedin"}
+        .site-links
+          = link_to 'abouts', id: "abouts", remote: true do
+            %i{:class => "fa fa-info"}
+          = link_to '#', id: "portfolio", remote: true do
+            %i{:class => "fa fa-folder-open"}
+        #my-info
+        .footer
+          Template designed by Sam Kim 
+.facts-about-me
+  %span{:style => "color: rgba(246, 246, 246, 0.5)"}
+    Did you know...
+  %span#my-statements
 .proj-1
-      
+  .close
+    %i{:class => "fa fa-times fa-2x"}
+  .proj-pic
+    %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+      %img{:src => "/images/projects/project1.png"}
+      %img{:src => "/images/projects/project1b.png", :style => "margin-top: -0.4%"}
+  .proj-description
+    %h1 Campus Grabs
+    .info
+      Campus grabs is a Ruby on Rails application that allows University students across Ontario to buy and sell goods. My goal was to sharpen my front-end skills, as well as getting comfortable with both Rails and Haml. 
+    .visit-site 
+      %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+        Visit Site
+    .visit-github
+      %a{:href => "https://github.com/hellosamkim/CampusGrabs", target: "_blank"}
+        Github Repo
+.proj-2
+  .close
+    %i{:class => "fa fa-times fa-2x"}
+  .proj-pic
+    %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+      %img{:src => "/images/projects/project1.png"}
+      %img{:src => "/images/projects/project1b.png", :style => "margin-top: -0.4%"}
+  .proj-description
+    %h1 Campus Grabs
+    .info
+      Campus grabs is a Ruby on Rails application that allows University students across Ontario to buy and sell goods. My goal was to sharpen my front-end skills, as well as getting comfortable with both Rails and Haml. 
+    .visit-site 
+      %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+        Visit Site
+    .visit-github
+      %a{:href => "https://github.com/hellosamkim/CampusGrabs", target: "_blank"}
+        Github Repo
+.proj-3
+  .close
+    %i{:class => "fa fa-times fa-2x"}
+  .proj-pic
+    %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+      %img{:src => "/images/projects/project1.png"}
+      %img{:src => "/images/projects/project1b.png", :style => "margin-top: -0.4%"}
+  .proj-description
+    %h1 Campus Grabs
+    .info
+      Campus grabs is a Ruby on Rails application that allows University students across Ontario to buy and sell goods. My goal was to sharpen my front-end skills, as well as getting comfortable with both Rails and Haml. 
+    .visit-site 
+      %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+        Visit Site
+    .visit-github
+      %a{:href => "https://github.com/hellosamkim/CampusGrabs", target: "_blank"}
+        Github Repo
+.proj-4
+  .close
+    %i{:class => "fa fa-times fa-2x"}
+  .proj-pic
+    %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+      %img{:src => "/images/projects/project1.png"}
+      %img{:src => "/images/projects/project1b.png", :style => "margin-top: -0.4%"}
+  .proj-description
+    %h1 Campus Grabs
+    .info
+      Campus grabs is a Ruby on Rails application that allows University students across Ontario to buy and sell goods. My goal was to sharpen my front-end skills, as well as getting comfortable with both Rails and Haml. 
+    .visit-site 
+      %a{:href => "http://campus-grabs.herokuapp.com", target: "_blank"}
+        Visit Site
+    .visit-github
+      %a{:href => "https://github.com/hellosamkim/CampusGrabs", target: "_blank"}
+        Github Repo
+
+= javascript_include_tag "all"

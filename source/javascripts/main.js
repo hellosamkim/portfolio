@@ -27,7 +27,9 @@ $(document).ready(function(){
         backDelay: 1000
       });
       $('#site-details').hide();
+      $('.facts-about-me').hide();
       setTimeout("$('#site-details').fadeIn(1000)", 9000);
+      setTimeout("$('.facts-about-me').fadeIn(1000)", 9000);
       
       startMyStatements(12000); 
       loadPage('abouts');
@@ -66,11 +68,10 @@ $(document).ready(function(){
       $('#' + page).click(function(e){
         e.preventDefault();
         $('#selection-overlay').fadeOut('fast');
-        $('#my-info').load(page, function(){
+        $('#my-info').load(page + ' #' + page, function(){
           $(this).hide().fadeIn('slow');
         });
       });
-
     };
 
     function loadPagePreview(page){
