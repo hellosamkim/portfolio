@@ -1,11 +1,11 @@
 $(document).ready(function(){
   if ($('body').is('.main')) {
-    intro();
     $('.intro-skip').hide();
-    $('#skip-button').hide();
-    introSkip();  
+    $('#skip-button').hide(); 
     $('#my-info').load('abouts');
-
+    intro();
+    introSkip();  
+    
     function intro(){
       $('#site-wrapper').hide();
       setTimeout("$('#site-wrapper').fadeIn(1500)", 5100);
@@ -40,7 +40,6 @@ $(document).ready(function(){
       $('#contact').addClass('animated infinite pulse');
       $('#portfolio').addClass('animated infinite pulse');
     };
-
     function introSkip(){
       setTimeout("$('#skip-button').fadeIn('fast')", 500);
       $('#skip-button').addClass('animated flash');
@@ -48,9 +47,10 @@ $(document).ready(function(){
         $('.intro').fadeOut('fast');
         $('#skip-button').addClass('animated bounceOutDown');
         $('.intro-skip').fadeIn(1500);
-        $('#site-wrapper').fadeIn('1500');
+        $('#site-wrapper').fadeIn(1500);
         $('#site-details').fadeIn(1500);
-        startMyStatements(2000);
+        $('.facts-about-me').fadeIn(1500);
+        startMyStatements(100);
       });
       setTimeout("$('#skip-button').addClass('animated bounceOutDown')", 6000);
     };

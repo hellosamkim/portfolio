@@ -222,6 +222,7 @@ a, a:hover, a:active, a:focus {
       h5 {
         margin-top: -10px;
         text-decoration: none;
+        color: rgba(161, 191, 123, 0.7);
       }
       #bitmaker, #mail {
         color: rgba(164, 215, 255, 0.7);
@@ -359,6 +360,7 @@ a, a:hover, a:active, a:focus {
     }
 
     h1 {
+      color: #FEFEFE;
       font-size: 3rem;
       margin: 5px 0 0 35px;
       text-decoration: underline;
@@ -373,7 +375,10 @@ a, a:hover, a:active, a:focus {
       margin-left: 5%;
       background-color: rgba(254, 156, 145, 0.8) !important;
     }
-    .visit-site, .visit-github {
+    .visit-github-v2 {
+      margin-left: 5%;
+    }
+    .visit-site, .visit-github, .visit-github-v2 {
       margin-top: 15px;
       font-size: 1.1rem;
       width: 90%;
@@ -391,7 +396,7 @@ a, a:hover, a:active, a:focus {
         transition: all 0.1s ease-in-out;
       }
     }
-    .visit-site:hover, .visit-github:hover {
+    .visit-site:hover, .visit-github:hover, .visit-github-v2:hover {
       opacity: 0.9;
     }
   }
