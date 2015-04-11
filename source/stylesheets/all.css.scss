@@ -405,3 +405,12 @@ a, a:hover, a:active, a:focus {
 .animated {
   visibility: visible !important;
 }
+
+.resume {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  img {
+    width: 40%;
+  }
+}
