@@ -1,8 +1,9 @@
 $(document).ready(function(){
-  openProj('proj-1')
-  openProj('proj-2')
-  openProj('proj-3')
-  openProj('proj-4')
+  openProj('proj-1');
+  openProj('proj-2');
+  openProj('proj-3');
+  openProj('proj-4');
+  openProj('proj-5');
 });
 
 function openProj(proj) {

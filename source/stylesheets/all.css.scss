@@ -273,15 +273,19 @@ a, a:hover, a:active, a:focus {
   }
 
   #portfolio {
-    background-color: rgba(1, 1, 1, 0.4);
+    height: 92.7%;
     overflow: auto;
+    background-color: rgba(1, 1, 1, 0.4);
     padding: 15px;
     border-radius: 5px;
     .row {
+      height: 50%;
       .project-l, .project-r {
         display: inline-block;
         width: 50%;
+        height: 100%;
         img {
+          height: 100%;
           -webkit-filter: grayscale(100%);
           -moz-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -306,7 +310,7 @@ a, a:hover, a:active, a:focus {
   }
 }
 
-.proj-1, .proj-2, .proj-3, .proj-4 {
+.proj-1, .proj-2, .proj-3, .proj-4, .proj-5 {
   visibility: hidden;
   border-radius: 3px;
   color: rgba(245, 245, 245, 0.9);
@@ -373,6 +377,9 @@ a, a:hover, a:active, a:focus {
       margin-left: 5%;
       margin-bottom: 12px;
       font-size: 1.2rem;
+      a {
+        color: rgba(215, 255, 164, 0.8)
+      }
     }
     .visit-site {
       margin-left: 5%;
